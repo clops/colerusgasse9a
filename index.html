@@ -1,82 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Colerusgasse 9a, Wien, Österreich</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <head>
+        <title>Colerusgasse 9a, Wien, Österreich</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Custom -->
-    <link href="css/colerusgasse.css" rel="stylesheet" />
+        <!-- Custom -->
+        <link href="css/colerusgasse.css" rel="stylesheet" />
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->        
-  </head>
-  <body>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->        
+    </head>
+    
+    <body>
+        <div id="wrap">
 
-    <!-- Wrap all page content here -->
-    <div id="wrap">
+            <!-- Begin page content -->
+            <div class="container">
+                <div class="page-header">
+                    <h1>Colerusgasse 9a <small>1220 Wien, &Ouml;sterreich</small></h1>
+                </div>
+            
+                <p class="lead">
+                    Welcome to the official website of our &laquo;Anlage&raquo; consisting of nine houses in the heart of E&szlig;ling in Vienna, Austria.
+                </p>
+            
+                <blockquote>
+                    <strong>In case of problems</strong> please contact the Compound Manager directly under:<br />
+                    <span class="glyphicon glyphicon-earphone"></span> +43 1 664 918 51 71 <br />
+                    <span class="glyphicon glyphicon-comment"></span> <a href="mailto:office@r-e-p.eu">office@r-e-p.eu</a>
+                </blockquote>
+            
+                <p>
+                    Otherwise feel free to send a message to all house owners using the email address <a href="mailto:owners@colerusgasse9a.at">owners@colerusgasse9a.at</a>
+                </p>
 
-      <!-- Begin page content -->
-      <div class="container">
-        <div class="page-header">
-          <h1>Colerusgasse 9a <small>1220 Wien, &Ouml;sterreich</small></h1>
+                <!-- Google Map -->
+                <div class="google-map-canvas" id="map-canvas"></div>        
+            </div>
         </div>
-        <p class="lead">
-            Welcome to the official website of our &laquo;Anlage&raquo; consisting of nine houses in the heart of E&szlig;ling in Vienna, Austria.
-        </p>
-        <blockquote>
-            <strong>In case of problems</strong> please contact the Compound Manager directly under:<br />
-            <span class="glyphicon glyphicon-earphone"></span> +43 1 664 918 51 71 <br />
-            <span class="glyphicon glyphicon-comment"></span> <a href="mailto:office@r-e-p.eu">office@r-e-p.eu</a>
-        </blockquote>
-        <p>
-            Otherwise feel free to send a message to all house owners using the email address <a href="mailto:owners@colerusgasse9a.at">owners@colerusgasse9a.at</a>
-        </p>
-
-        <!-- Google Map -->
-        <div class="google-map-canvas" id="map-canvas"></div>
-        
-      </div>
-    </div>
     
-    <!-- Begin Footer -->
-    <div id="footer">
-      <div class="container">
-        <p class="text-muted credit">
-            Copyleft <a href="http://clops.at" target="_blank">clops.at</a>. 
-            Co-owners, feel free to <a href="https://github.com/clops/colerusgasse9a" target="_blank">fork and tweak</a> as you see fit.
-        </p>
-      </div>
-    </div>
+        <!-- Begin Footer -->
+        <div id="footer">
+          <div class="container">
+            <p class="text-muted credit">
+                Copyleft <a href="http://clops.at" target="_blank">clops.at</a>. 
+                Co-owners, feel free to <a href="https://github.com/clops/colerusgasse9a" target="_blank">fork and tweak</a> as you see fit.
+            </p>
+          </div>
+        </div>
     
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Init Map -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtIvr6AlzWBI1V2KcZGGqlKUnjsrlAbE8&sensor=false"></script>
-    <script>
-        function initialize() {
-            var mapOptions = {
-                center: new google.maps.LatLng(48.2135915, 16.5210041),
-                zoom: 15,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Init Map -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtIvr6AlzWBI1V2KcZGGqlKUnjsrlAbE8&sensor=false"></script>
+        <script>
+            function initialize() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(48.2135915, 16.5210041),
+                    zoom: 15,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
             
-            var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+                var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
             
-            var marker = new google.maps.Marker({
-              position: mapOptions.center,
-              map: map,
-              title: 'Find us here!'
-            });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-  </body>
+                var marker = new google.maps.Marker({
+                    position: mapOptions.center,
+                    map: map,
+                    title: 'Find us here!'
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+    </body>
 </html>
